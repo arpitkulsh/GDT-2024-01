@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addButtonToView()
+        self.addLableToView()
+        self.addTextField()
         print(self.view.frame)
         print(self.view.bounds)
         print(self.view.center)
@@ -21,15 +23,38 @@ class LoginViewController: UIViewController {
     }
     
     func addButtonToView() {
-        let button = UIButton(type: .roundedRect)
-        button.backgroundColor = UIColor.green
-        button.layer.cornerRadius = 100.0
-        button.clipsToBounds =  true
+        let button = FAButton(type: .roundedRect)
+       
         button.setTitle("Submit", for: .normal)
-        button.frame = CGRect(x: 100.0, y: 100.0, width: 200.0, height: 200.0)
+        button.frame = CGRect(x: 10.0, y: 100.0, width: self.view.frame.width - 100.0, height: 60.0)
         
         self.view.addSubview(button)
         
+    }
+    
+    func addLableToView() {
+        let label = UILabel()
+        label.text = "Hello World"
+        label.textColor = UIColor.blue
+        label.textAlignment = .left
+        label.font = UIFont.systemFont(ofSize: 20)
+        
+        label.frame = CGRect(x: 100.0, y: 170.0, width: 200.0, height: 100.0)
+        
+        self.view.addSubview(label)
+    }
+    
+    func addTextField() {
+        let textFeild = UITextField()
+        textFeild.placeholder = "Enter Your Name"
+        textFeild.borderStyle = .roundedRect
+        textFeild.keyboardType = .default
+        textFeild.backgroundColor = .lightGray
+        
+        
+        textFeild.frame = CGRect(x: 10.0, y: 250.0, width: self.view.frame.width - 20.0, height: 50.0)
+        
+        self.view.addSubview(textFeild)
     }
     
     

@@ -16,5 +16,29 @@ class FAButton: UIButton {
         // Drawing code
     }
     */
+    
+    var customBakcgroundColor: UIColor = .green {
+        didSet {
+            backgroundColor = customBakcgroundColor
+        }
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.setUpButton()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.setUpButton()
+    }
+    
+    private func setUpButton() {
+        self.setTitleColor(.white, for: .normal)
+        self.titleLabel?.font  = UIFont.systemFont(ofSize: 14)
+        self.layer.cornerRadius = 5
+        self.backgroundColor = customBakcgroundColor
+    }
+    
 
 }
