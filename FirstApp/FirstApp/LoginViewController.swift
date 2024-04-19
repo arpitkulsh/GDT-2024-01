@@ -7,15 +7,23 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var data: String? 
     @IBOutlet weak var backButton: UIButton!
+    let tableView: UITableView! = UITableView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addButtonToView()
-        self.addLableToView()
-        self.addTextField()
+        tableView.delegate = self
+        tableView.dataSource = self
+        self.tableView.register(CustomCell.self, forCellReuseIdentifier: "customCell")
+        tableView.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: self.view.frame.height)
+        
+        self.view.addSubview(tableView)
+        //self.addButtonToView()
+        //self.addLableToView()
+       // self.addTextField()
+        //addViewWithConstraints()
         print(self.view.frame)
         print(self.view.bounds)
         print(self.view.center)
@@ -57,6 +65,33 @@ class LoginViewController: UIViewController {
         self.view.addSubview(textFeild)
     }
     
+    func addViewWithConstraints() {
+        let redView = UIView()
+        redView.translatesAutoresizingMaskIntoConstraints = false
+        redView.backgroundColor = .red
+        self.view.addSubview(redView)
+        
+        let blueView = UIView()
+        blueView.translatesAutoresizingMaskIntoConstraints = false
+        blueView.backgroundColor = UIColor.blue
+        self.view.addSubview(blueView)
+        
+        NSLayoutConstraint.activate([
+            redView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30.0),
+            redView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0),
+            redView.widthAnchor.constraint(equalToConstant: 120.0),
+            redView.heightAnchor.constraint(equalToConstant: 150.0)
+            
+        ])
+        
+        NSLayoutConstraint.activate([
+            blueView.topAnchor.constraint(equalTo: redView.bottomAnchor, constant: 30.0),
+            blueView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0),
+            blueView.widthAnchor.constraint(equalToConstant: 120.0),
+            blueView.heightAnchor.constraint(equalToConstant: 150.0)
+        ])
+    }
+    
     
     
     
@@ -80,6 +115,19 @@ class LoginViewController: UIViewController {
         let destinationVC = storyboard.instantiateViewController(withIdentifier: "signupDestinationID") as? SignupViewController
         
         self.present(destinationVC!, animated: true)
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell =  tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as? CustomCell
+        cell?.label.text = "\(indexPath.row) With Section \(indexPath.section)"
+        
+        return cell!
+        
     }
     
    
