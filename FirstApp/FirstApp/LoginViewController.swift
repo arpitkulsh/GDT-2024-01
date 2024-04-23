@@ -14,6 +14,42 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
     let tableView: UITableView! = UITableView()
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*     File Related Task */
+        let file: FAFileManager = FAFileManager.shared
+        print(file.getDocumentDirectory()!)
+        
+        /* Create file in DD   */
+        if file.writeFileIn(containingString: "Hello World", to: file.getDocumentDirectory()!, with: "MyFile.txt") {
+            print("file created")
+        }
+        else {
+            print("file NOT created")
+        }
+       
+        
+        /* Create file with folder  */
+        let str: String = "Hello World !! Happy Faces Around"
+        if let data = str.data(using: .utf8) {
+            if file.writeFileIn(folder: "Main Content", containingData: data, to: file.getDocumentDirectory()!, with: "Cache.txt") {
+                print("Files and folder created")
+            }
+            else {
+                print("Files and folder NOT created")
+            }
+        }
+         
+        
+        
+        let strData = file.readFile(at: file.getDocumentDirectory()!, withName: "MyFile.txt")
+        print(strData!)
+        
+        
+        
+        
+        
+        
+        
+        
         tableView.delegate = self
         tableView.dataSource = self
         self.tableView.register(CustomCell.self, forCellReuseIdentifier: "customCell")
