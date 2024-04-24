@@ -18,16 +18,16 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let file: FAFileManager = FAFileManager.shared
         print(file.getDocumentDirectory()!)
         
-        /* Create file in DD   */
+        /* Create file in DD
         if file.writeFileIn(containingString: "Hello World", to: file.getDocumentDirectory()!, with: "MyFile.txt") {
             print("file created")
         }
         else {
             print("file NOT created")
         }
-       
+         */
         
-        /* Create file with folder  */
+        /* Create file with folder
         let str: String = "Hello World !! Happy Faces Around"
         if let data = str.data(using: .utf8) {
             if file.writeFileIn(folder: "Main Content", containingData: data, to: file.getDocumentDirectory()!, with: "Cache.txt") {
@@ -37,12 +37,53 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 print("Files and folder NOT created")
             }
         }
+         */
+        
+         /* Read file code */
+        if let strData = file.readFile(at: file.getDocumentDirectory()!, withName: "MyFile.txt") {
+            print(strData)
+        }
+        
+        
+        var path = file.getDocumentDirectory()!
+        //path = path.appendingPathComponent("Main Content")
+        
+        let paths = file.getAllFiles(at: path, foldername: "Main Content")
+        print(paths)
+        
+        /* Move File Code
+        let moveFile = file.moveFile(withFile: "MyFile.txt", inDirectory: file.getDocumentDirectory()!, toDirectory: path)
+        print(moveFile)
+         */
+        
+        /* Copy File code
+        let copyFile = file.copyFile(withFile: "Cache.txt", inDirectory: path, toDirectory: file.getDocumentDirectory()!)
+        print(copyFile)
+        */
+        
+        /* Renaming of file
+        let rename = file.renameFile(at: file.getDocumentDirectory()!, oldfile: "MyFile.txt", newfile: "MYNEWFILE.txt")
+        print(rename)
+       */
+        
          
+        /* Delete file code
+        var path = file.getDocumentDirectory()!
+        path = path.appendingPathComponent("Main Content")
+        path = path.appendingPathComponent("Open")
+        path = path.appendingPathComponent("Width")
+        let deleteData = file.deleteFile(at: path, with: "Cache.txt")
+        print(deleteData)
         
+        let delete = file.deleteFile(at: file.getDocumentDirectory()!, withfolder: "Main Content", withfile: "CacheFile.txt")
+         
+         */
         
-        let strData = file.readFile(at: file.getDocumentDirectory()!, withName: "MyFile.txt")
-        print(strData!)
+        /* chnageExtesnion
         
+        let change = file.changeExtension(withName: "Cache.txt", at: file.getDocumentDirectory()!, toExtension: "pdf")
+        print(change)
+        */
         
         
         

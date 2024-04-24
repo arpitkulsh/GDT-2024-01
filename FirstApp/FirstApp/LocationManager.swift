@@ -66,13 +66,15 @@ class FAFileManager: NSObject {
     /*
        Directory (folder)
         - create directory (folder) - DONE
-        - get-all-file
-        - delete file
+        - get-all-file from directory
+        - delete file -  Done
         - create file (write a file) - DONE
-        - read file - In Progress
+        - read file - Done
         - Update file (delete old file, create new file with same name)
-        - move file
-        - rename file
+        - move file - Done
+        - rename file - Done
+        - Copy file -  Done
+        - changeExension (.txt, .png, .jpg, .jpeg) -  Done
      */
     
     func writeFileIn(containingString: String, to path: URL, with name: String) -> Bool {
@@ -96,7 +98,7 @@ class FAFileManager: NSObject {
     
     func writeDirectory(folder: String, to path: URL) -> Bool {
         
-        let filePath = path.path + "/" + folder
+        _ = path.path + "/" + folder
         if let documentDirectory = self.getDocumentDirectory() {
             let path = documentDirectory.appendingPathComponent(folder)
             if !self.isExist(file: path) {
@@ -132,6 +134,129 @@ class FAFileManager: NSObject {
         }
 
         return nil
+    }
+    
+    func deleteFile(at path: URL, with name: String) -> Bool 
+    {
+        let makeFilePath = path.appendingPathComponent(name)
+        do {
+            try FileManager.default.removeItem(at: makeFilePath)
+            
+            return true
+        }
+        catch {
+            print(error)
+        }
+        
+        return false
+    }
+    
+    func deleteFile(at path: URL,withfolder fname: String, withfile name: String) -> Bool
+    {
+        var makeFilePath = path.appendingPathComponent(fname)
+        makeFilePath = makeFilePath.appendingPathComponent(name)
+        do {
+            try FileManager.default.removeItem(at: makeFilePath)
+            
+            return true
+        }
+        catch {
+            print(error)
+        }
+        
+        return false
+    }
+    
+    func moveFile(withFile name: String, inDirectory inPath: URL, toDirectory outPath: URL) -> Bool {
+        
+        let originPath = inPath.appendingPathComponent(name)
+        let destinationPath = outPath.appendingPathComponent(name)
+        do {
+            try FileManager.default.moveItem(at: originPath, to: destinationPath)
+            return true
+        }
+        catch {
+            print(error)
+        }
+        return false
+    }
+    
+    func copyFile(withFile name: String, inDirectory inPath: URL, toDirectory outPath: URL) -> Bool {
+        let originPath = inPath.appendingPathComponent(name)
+        let destinationPath = outPath.appendingPathComponent(name)
+        do {
+            try FileManager.default.copyItem(at: originPath, to: destinationPath)
+            return true
+        }
+        catch {
+            print(error)
+        }
+        return false
+    }
+    
+    func renameFile(at filePath: URL, oldfile oldName: String, newfile newname: String) -> Bool {
+        let oldFilePath = filePath.appendingPathComponent(oldName)
+        let newFilePath = filePath.appendingPathComponent(newname)
+        
+        do {
+            try FileManager.default.moveItem(at: oldFilePath, to: newFilePath)
+            return true
+        }
+        catch {
+            print(error)
+        }
+        return false
+    }
+    
+    func changeExtension(withName: String, at path: URL, toExtension newExt: String) -> Bool{
+        var newFileName = NSString(string: withName)
+        newFileName =  newFileName.deletingPathExtension as NSString
+        newFileName = newFileName.appendingPathExtension(newExt)! as NSString
+        
+        let oldFilePath = path.appendingPathComponent(withName)
+        let newFilePath = path.appendingPathComponent(newFileName as String)
+        
+        do {
+            try FileManager.default.moveItem(at: oldFilePath, to: newFilePath)
+            return true
+        }
+        catch {
+            print(error)
+        }
+        return false
+    }
+    
+    func changeExtensionWithSwift(withName: String, at path: URL, toExtension newExt: String) -> Bool{
+       
+        let names = withName.split(separator: ".")
+        let newName = names[0] + "." + newExt
+        
+        let oldFilePath = path.appendingPathComponent(withName)
+        let newFilePath = path.appendingPathComponent(newName)
+        
+        do {
+            try FileManager.default.moveItem(at: oldFilePath, to: newFilePath)
+            return true
+        }
+        catch {
+            print(error)
+        }
+        return false
+    }
+    
+    
+    func getAllFiles(at path: URL, foldername: String) -> [URL]
+    {
+       let filepath = path.appendingPathComponent(foldername)
+        do {
+          let directoryContents =   try FileManager.default.contentsOfDirectory(at: filepath, includingPropertiesForKeys: nil, options: [])
+            return directoryContents
+        }
+        catch {
+            print(error)
+        }
+        
+        return []
     }
     
     
