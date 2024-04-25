@@ -15,7 +15,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 
     @IBOutlet weak var myTableView: UITableView!
-    var data: [String] = ["Apple", "Orange", "Kiwi", "Banana", "Grapes", "Apple 1", "Orange 1", "Kiwi 1", "Banana 1", "Grapes 1"]
+    var data: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 //        var path: [AnyObject] = NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true) as [AnyObject]
@@ -24,9 +24,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.separatorColor = .clear
-//        UserDefaults.standard.setValue(data, forKey: "userData")
-//        UserDefaults.standard.setValue("user@email.com", forKey: "userEmail")
-        
+       
+    
         guard let plistPath = Bundle.main.path(forResource: "Country", ofType: "plist") else {
             return
         }
@@ -44,6 +43,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UserDefaults.standard.setValue(data, forKey: "userData")
+        UserDefaults.standard.setValue("user@email.com", forKey: "userEmail")
+        myTableView.reloadData()
+    }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -53,6 +59,29 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
+    }
+    
+    func gobacktoBack() {
+        /* just Go back 1 view controller */
+        self.navigationController?.popViewController(animated: true)
+        
+        /* Go back to Any ViewController */
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let destinationVC = storyboard.instantiateViewController(withIdentifier: "signupDestinationID") as? SignupViewController {
+            self.navigationController?.popToViewController(destinationVC, animated: true)
+        }
+        
+        /* Go to First Page - RootViewController */
+        self.navigationController?.popToRootViewController(animated: true)
+        
+        
+        /* Show All View Controllers in Current Stack */
+        let viewcontrollers = self.navigationController?.viewControllers
+        print(viewcontrollers!)
+        
+        /* Show root Controllers from application */
+        let application = UIApplication.shared
+        let views = application.delegate?.window??.windowScene?.keyWindow?.rootViewController
     }
     
 //    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -99,7 +128,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return section == 0 ? 4 : 1
+        return data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

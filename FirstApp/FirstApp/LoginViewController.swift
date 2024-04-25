@@ -91,19 +91,19 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        self.tableView.register(CustomCell.self, forCellReuseIdentifier: "customCell")
-        tableView.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: self.view.frame.height)
+//        tableView.delegate = self
+//        tableView.dataSource = self
+//        self.tableView.register(CustomCell.self, forCellReuseIdentifier: "customCell")
+//        tableView.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: self.view.frame.height)
         
-        self.view.addSubview(tableView)
+        //self.view.addSubview(tableView)
         //self.addButtonToView()
         //self.addLableToView()
        // self.addTextField()
         //addViewWithConstraints()
-        print(self.view.frame)
-        print(self.view.bounds)
-        print(self.view.center)
+//        print(self.view.frame)
+//        print(self.view.bounds)
+//        print(self.view.center)
         // Do any additional setup after loading the view.
     }
     
@@ -167,6 +167,18 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
             blueView.widthAnchor.constraint(equalToConstant: 120.0),
             blueView.heightAnchor.constraint(equalToConstant: 150.0)
         ])
+    }
+    
+    @IBAction func tapHandle(_ gestureReconizer: UITapGestureRecognizer) {
+    
+        
+        if gestureReconizer.state == .ended {
+            let animator = UIViewPropertyAnimator(duration: 0.5, curve: .easeInOut, animations: {
+                gestureReconizer.view?.center.x += 100
+                gestureReconizer.view?.center.y += 100
+            })
+            animator.startAnimation()
+        }
     }
     
     

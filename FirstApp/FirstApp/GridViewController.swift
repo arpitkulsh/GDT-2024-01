@@ -20,6 +20,33 @@ class GridViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        getPDFData()
+    }
+    
+    func getPDFData() {
+        let pdfPage = self.view.bounds
+        let pdfData = NSMutableData()
+        UIGraphicsBeginPDFContextToData(pdfData, pdfPage, nil)
+        UIGraphicsBeginPDFPageWithInfo(pdfPage, nil)
+        guard let pdfContext = UIGraphicsGetCurrentContext() else {
+            return
+        }
+        self.view.layer.render(in: pdfContext)
+        UIGraphicsEndPDFContext()
+        
+        print(pdfData)
+        
+        let fileManger = FAFileManager.shared
+        print(fileManger.getDocumentDirectory()!)
+        if let data = pdfData as? Data {
+            let result = fileManger.writeFileIn(containingData: data, to: fileManger.getDocumentDirectory()!, with: "MyPDFFile.pdf")
+            print(result)
+        }
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
         let size : CGSize = CGSize(width: self.view.frame.width, height: 100.0)
         return size
@@ -39,7 +66,12 @@ class GridViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        12
+        if section == 0 {
+           return 12
+        }
+        
+        return 30
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

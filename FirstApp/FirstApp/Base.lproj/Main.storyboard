@@ -270,12 +270,28 @@
                     <view key="view" contentMode="scaleToFill" id="X6W-1M-7Xh">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="C40-Z8-L2U">
+                                <rect key="frame" x="48" y="226" width="335" height="198"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bZa-uB-qCd" appends="YES" id="gpb-Z2-5FN"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jel-hd-q3F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="Qz3-wn-YHq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUF-UU-GuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="bZa-uB-qCd">
+                    <connections>
+                        <action selector="tapHandle:" destination="wAH-py-oJ2" id="JTh-MI-jIP"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2846.5116279069766" y="1443.9914163090129"/>
         </scene>

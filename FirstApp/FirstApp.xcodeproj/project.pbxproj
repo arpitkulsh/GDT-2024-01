@@ -12,7 +12,7 @@
 		2B429B842BBB02AB00E7A806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B429B822BBB02AB00E7A806 /* Main.storyboard */; };
 		2B429B862BBB02AD00E7A806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B429B852BBB02AD00E7A806 /* Assets.xcassets */; };
 		2B429B892BBB02AD00E7A806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B429B872BBB02AD00E7A806 /* LaunchScreen.storyboard */; };
-		2B4953962BD6E6ED00E59691 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4953952BD6E6ED00E59691 /* LocationManager.swift */; };
+		2B4953962BD6E6ED00E59691 /* FAFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4953952BD6E6ED00E59691 /* FAFileManager.swift */; };
 		2B6D06BD2BCDA2CD003444AF /* FormFieldViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D06BC2BCDA2CD003444AF /* FormFieldViewCell.swift */; };
 		2B6D06BF2BCDA67D003444AF /* SubmitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D06BE2BCDA67D003444AF /* SubmitCell.swift */; };
 		2B6D06C12BCDA688003444AF /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D06C02BCDA688003444AF /* SliderTableViewCell.swift */; };
@@ -35,7 +35,7 @@
 		2B429B852BBB02AD00E7A806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B429B882BBB02AD00E7A806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B429B8A2BBB02AD00E7A806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B4953952BD6E6ED00E59691 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2B4953952BD6E6ED00E59691 /* FAFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAFileManager.swift; sourceTree = "<group>"; };
 		2B6D06BC2BCDA2CD003444AF /* FormFieldViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldViewCell.swift; sourceTree = "<group>"; };
 		2B6D06BE2BCDA67D003444AF /* SubmitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitCell.swift; sourceTree = "<group>"; };
 		2B6D06C02BCDA688003444AF /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			children = (
 				2B429B7C2BBB02AB00E7A806 /* AppDelegate.swift */,
 				2B429B7E2BBB02AB00E7A806 /* SceneDelegate.swift */,
-				2B4953952BD6E6ED00E59691 /* LocationManager.swift */,
+				2B4953952BD6E6ED00E59691 /* FAFileManager.swift */,
 				2BB72BC12BC06E38001419C9 /* LoginViewController.swift */,
 				2BB72BBF2BC06DD9001419C9 /* HomeViewController.swift */,
 				2B7EE93D2BD01D7600546FD0 /* SignupViewController.swift */,
@@ -185,7 +185,7 @@
 				2B429B7D2BBB02AB00E7A806 /* AppDelegate.swift in Sources */,
 				2B6D06BD2BCDA2CD003444AF /* FormFieldViewCell.swift in Sources */,
 				2B7EE9402BD04DA900546FD0 /* FAButton.swift in Sources */,
-				2B4953962BD6E6ED00E59691 /* LocationManager.swift in Sources */,
+				2B4953962BD6E6ED00E59691 /* FAFileManager.swift in Sources */,
 				2B429B7F2BBB02AB00E7A806 /* SceneDelegate.swift in Sources */,
 				2BB72BC02BC06DD9001419C9 /* HomeViewController.swift in Sources */,
 				2B6D06C72BCEF91F003444AF /* GridViewController.swift in Sources */,

@@ -250,7 +250,24 @@ class FAFileManager: NSObject {
        let filepath = path.appendingPathComponent(foldername)
         do {
           let directoryContents =   try FileManager.default.contentsOfDirectory(at: filepath, includingPropertiesForKeys: nil, options: [])
-            return directoryContents
+            var pdfList = directoryContents.filter {
+                $0.pathExtension == "pdf"
+            } as [URL]
+            var txtList = directoryContents.filter {
+                $0.pathExtension == "txt"
+            } as [URL]
+            var csvList = directoryContents.filter {
+                $0.pathExtension == "csv"
+            } as [URL]
+            var pngList = directoryContents.filter {
+                $0.pathExtension == "png"
+            } as [URL]
+            
+            pdfList.append(contentsOf: txtList)
+            pdfList.append(contentsOf: csvList)
+            pdfList.append(contentsOf: pngList)
+            
+            return pdfList
         }
         catch {
             print(error)
