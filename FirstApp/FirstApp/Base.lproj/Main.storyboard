@@ -271,12 +271,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="C40-Z8-L2U">
-                                <rect key="frame" x="48" y="226" width="335" height="198"/>
+                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="C40-Z8-L2U">
+                                <rect key="frame" x="48" y="86" width="286" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="bZa-uB-qCd" appends="YES" id="gpb-Z2-5FN"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="VXe-At-a3B">
+                                <rect key="frame" x="50" y="304" width="330" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="7Xa-Pg-4uH" appends="YES" id="It0-0w-lIt"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -285,6 +293,9 @@
                         <gestureRecognizers/>
                     </view>
                     <navigationItem key="navigationItem" id="Qz3-wn-YHq"/>
+                    <connections>
+                        <outlet property="tapGesture" destination="bZa-uB-qCd" id="rRr-E9-7wY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUF-UU-GuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="bZa-uB-qCd">
@@ -292,6 +303,11 @@
                         <action selector="tapHandle:" destination="wAH-py-oJ2" id="JTh-MI-jIP"/>
                     </connections>
                 </tapGestureRecognizer>
+                <pinchGestureRecognizer id="7Xa-Pg-4uH">
+                    <connections>
+                        <action selector="pinchGestureHandle:" destination="wAH-py-oJ2" id="ie7-ae-B3K"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2846.5116279069766" y="1443.9914163090129"/>
         </scene>

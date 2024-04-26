@@ -55,114 +55,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8578BA5E-07DC-4B7F-B030-A8A550D04432"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FirstApp/LoginViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8578BA5E-07DC-4B7F-B030-A8A550D04432 - 17aba8800081971a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FirstApp.LoginViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "FirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "3728">
-               </Location>
-               <Location
-                  uuid = "8578BA5E-07DC-4B7F-B030-A8A550D04432 - 17aba88000819460"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FirstApp.LoginViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "FirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "2112">
-               </Location>
-               <Location
-                  uuid = "8578BA5E-07DC-4B7F-B030-A8A550D04432 - 17aba880008196fd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FirstApp.LoginViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "FirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "2128">
-               </Location>
-               <Location
-                  uuid = "8578BA5E-07DC-4B7F-B030-A8A550D04432 - 17aba880008198af"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FirstApp.LoginViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "FirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "2432">
-               </Location>
-               <Location
-                  uuid = "8578BA5E-07DC-4B7F-B030-A8A550D04432 - 17aba880008198af"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FirstApp.LoginViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "FirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "2296">
-               </Location>
-               <Location
-                  uuid = "8578BA5E-07DC-4B7F-B030-A8A550D04432 - 17aba88000819a51"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FirstApp.LoginViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "FirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
-                  offsetFromSymbolStart = "1876">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "4AF56AAC-DF52-4718-9B1E-9ECC5BE68585"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -179,17 +71,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "317D39C2-B765-42CB-81DA-5CDC34DE0F40"
+            uuid = "3CFADB97-5DBA-4CDC-B38E-3EBE6C5015E7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FirstApp/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
             landmarkName = "tapHandle(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3CFADB97-5DBA-4CDC-B38E-3EBE6C5015E7 - 2ce0468b3ea8d922"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in FirstApp.LoginViewController.tapHandle(__C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "FirstApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3CFADB97-5DBA-4CDC-B38E-3EBE6C5015E7 - 1d3c2cd436392a36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FirstApp.LoginViewController.tapHandle(__C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "FirstApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "177"
+                  endingLineNumber = "177"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

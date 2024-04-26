@@ -11,9 +11,11 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     var data: String? 
     @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var tapGesture: UITapGestureRecognizer!
     let tableView: UITableView! = UITableView()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         /*     File Related Task */
         let file: FAFileManager = FAFileManager.shared
         print(file.getDocumentDirectory()!)
@@ -174,10 +176,20 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         if gestureReconizer.state == .ended {
             let animator = UIViewPropertyAnimator(duration: 0.5, curve: .easeInOut, animations: {
-                gestureReconizer.view?.center.x += 100
-                gestureReconizer.view?.center.y += 100
+                gestureReconizer.view?.center.x += 0
+                gestureReconizer.view?.center.y += 20
             })
             animator.startAnimation()
+        }
+    }
+    
+    
+    @IBAction func pinchGestureHandle(_ gestureReconizer: UIPinchGestureRecognizer) {
+        
+        if gestureReconizer.state == .began || gestureReconizer.state == .changed {
+            
+            gestureReconizer.view?.transform = (gestureReconizer.view?.transform.scaledBy(x: gestureReconizer.scale, y: gestureReconizer.scale))!
+            gestureReconizer.scale = 1.0
         }
     }
     
