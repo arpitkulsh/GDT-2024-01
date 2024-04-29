@@ -78,28 +78,13 @@
             filePath = "FirstApp/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "tapHandle(_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "3CFADB97-5DBA-4CDC-B38E-3EBE6C5015E7 - 2ce0468b3ea8d922"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in FirstApp.LoginViewController.tapHandle(__C.UITapGestureRecognizer) -&gt; ()"
-                  moduleName = "FirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "177"
-                  endingLineNumber = "177"
-                  offsetFromSymbolStart = "28">
-               </Location>
-               <Location
-                  uuid = "3CFADB97-5DBA-4CDC-B38E-3EBE6C5015E7 - 1d3c2cd436392a36"
+                  uuid = "3CFADB97-5DBA-4CDC-B38E-3EBE6C5015E7 - 1d3c2cd436392a11"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -109,11 +94,57 @@
                   urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "177"
-                  endingLineNumber = "177"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "3CFADB97-5DBA-4CDC-B38E-3EBE6C5015E7 - 2ce0468b3ea8d9e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in FirstApp.LoginViewController.tapHandle(__C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "FirstApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "179"
+                  endingLineNumber = "179"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "3CFADB97-5DBA-4CDC-B38E-3EBE6C5015E7 - 1d3c2cd436392a11"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FirstApp.LoginViewController.tapHandle(__C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "FirstApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
                   offsetFromSymbolStart = "56">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC2EA999-14EA-4A8E-B686-6DC3F25D288A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirstApp/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "panGestureHandler(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

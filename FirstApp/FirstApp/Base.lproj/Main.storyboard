@@ -284,7 +284,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="7Xa-Pg-4uH" appends="YES" id="It0-0w-lIt"/>
+                                    <outletCollection property="gestureRecognizers" destination="7Im-Z2-sJY" appends="YES" id="bX4-9h-soC"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -303,11 +303,11 @@
                         <action selector="tapHandle:" destination="wAH-py-oJ2" id="JTh-MI-jIP"/>
                     </connections>
                 </tapGestureRecognizer>
-                <pinchGestureRecognizer id="7Xa-Pg-4uH">
+                <rotationGestureRecognizer id="7Im-Z2-sJY">
                     <connections>
-                        <action selector="pinchGestureHandle:" destination="wAH-py-oJ2" id="ie7-ae-B3K"/>
+                        <action selector="handleRotate:" destination="wAH-py-oJ2" id="TbT-pS-YtH"/>
                     </connections>
-                </pinchGestureRecognizer>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2846.5116279069766" y="1443.9914163090129"/>
         </scene>

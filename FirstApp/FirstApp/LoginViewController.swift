@@ -10,6 +10,8 @@ import UIKit
 class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var data: String? 
+    var initailCenter = CGPoint()
+    var viewForReset = UIView()
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var tapGesture: UITapGestureRecognizer!
     let tableView: UITableView! = UITableView()
@@ -190,6 +192,68 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
             gestureReconizer.view?.transform = (gestureReconizer.view?.transform.scaledBy(x: gestureReconizer.scale, y: gestureReconizer.scale))!
             gestureReconizer.scale = 1.0
+        }
+    }
+    
+    @IBAction func swipeGestureHandler(_ gestureReconizer: UISwipeGestureRecognizer) {
+        if gestureReconizer.state == .ended {
+            print(gestureReconizer.direction)
+        }
+    }
+    
+    @IBAction func panGestureHandler(_ gestureReconizer: UIPanGestureRecognizer) {
+        guard gestureReconizer.view != nil else {return}
+        let piece = gestureReconizer.view!
+        let translation = gestureReconizer.translation(in: piece.superview)
+        
+        if gestureReconizer.state == .began {
+            initailCenter = piece.center
+        }
+        
+        if gestureReconizer.state == .ended {
+            let newCenter = CGPoint(x: initailCenter.x + translation.x, y: initailCenter.y + translation.y)
+            
+            piece.center = newCenter
+        }
+        else {
+            piece.center = initailCenter
+        }
+        
+    }
+    
+    @IBAction func longPressGesture(_ gestureReconizer: UILongPressGestureRecognizer) {
+        if gestureReconizer.state == .began {
+            self.becomeFirstResponder()
+            self.viewForReset = gestureReconizer.view!
+            
+            let menuItemTitle = "Reset"
+            let menuItem = UIMenuItem(title: menuItemTitle, action: #selector(self.setForMenuSelection))
+            
+            let menuItemTitle1 = "Open"
+            let menuItem1 = UIMenuItem(title: menuItemTitle1, action: #selector(self.setForMenuSelection))
+            
+            let menuController = UIMenuController.shared
+            menuController.menuItems = [menuItem, menuItem1]
+            
+            let location = gestureReconizer.location(in: gestureReconizer.view!)
+            let menuLocation = CGRect(x: location.x, y: location.y, width: 0, height: 0)
+            
+            menuController.setTargetRect(menuLocation, in: gestureReconizer.view!)
+            
+            menuController.setMenuVisible(true, animated: true)
+        }
+    }
+    
+    @objc func setForMenuSelection() {
+        
+    }
+    
+    @IBAction func handleRotate(_ gestureReconizer: UIRotationGestureRecognizer) {
+        guard gestureReconizer.view != nil else {return}
+        
+        if gestureReconizer.state == .began || gestureReconizer.state == .changed {
+            gestureReconizer.view?.transform = (gestureReconizer.view?.transform.rotated(by: gestureReconizer.rotation))!
+            gestureReconizer.rotation = 0
         }
     }
     
