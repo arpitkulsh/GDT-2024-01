@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2EA5B02BE2BF0200707F13 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA5AF2BE2BF0200707F13 /* DBManager.swift */; };
 		2B429B7D2BBB02AB00E7A806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B429B7C2BBB02AB00E7A806 /* AppDelegate.swift */; };
 		2B429B7F2BBB02AB00E7A806 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B429B7E2BBB02AB00E7A806 /* SceneDelegate.swift */; };
 		2B429B842BBB02AB00E7A806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B429B822BBB02AB00E7A806 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B2EA5AF2BE2BF0200707F13 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		2B429B792BBB02AB00E7A806 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B429B7C2BBB02AB00E7A806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B429B7E2BBB02AB00E7A806 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		2B429B7B2BBB02AB00E7A806 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B2EA5AF2BE2BF0200707F13 /* DBManager.swift */,
 				2B429B7C2BBB02AB00E7A806 /* AppDelegate.swift */,
 				2B429B7E2BBB02AB00E7A806 /* SceneDelegate.swift */,
 				2B4953952BD6E6ED00E59691 /* FAFileManager.swift */,
@@ -185,6 +188,7 @@
 				2B429B7D2BBB02AB00E7A806 /* AppDelegate.swift in Sources */,
 				2B6D06BD2BCDA2CD003444AF /* FormFieldViewCell.swift in Sources */,
 				2B7EE9402BD04DA900546FD0 /* FAButton.swift in Sources */,
+				2B2EA5B02BE2BF0200707F13 /* DBManager.swift in Sources */,
 				2B4953962BD6E6ED00E59691 /* FAFileManager.swift in Sources */,
 				2B429B7F2BBB02AB00E7A806 /* SceneDelegate.swift in Sources */,
 				2BB72BC02BC06DD9001419C9 /* HomeViewController.swift in Sources */,
