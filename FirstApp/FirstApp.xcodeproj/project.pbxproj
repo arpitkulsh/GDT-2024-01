@@ -26,6 +26,7 @@
 		2BB72BC02BC06DD9001419C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72BBF2BC06DD9001419C9 /* HomeViewController.swift */; };
 		2BB72BC22BC06E38001419C9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72BC12BC06E38001419C9 /* LoginViewController.swift */; };
 		2BE69ED32BCD88B500D480AE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE69ED22BCD88B500D480AE /* HomeTableViewCell.swift */; };
+		2BFEA9C02BE5583800B48CB9 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEA9BF2BE5583800B48CB9 /* StudentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		2BB72BBF2BC06DD9001419C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2BB72BC12BC06E38001419C9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2BE69ED22BCD88B500D480AE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		2BFEA9BF2BE5583800B48CB9 /* StudentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		2B429B7B2BBB02AB00E7A806 /* FirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				2BFEA9BF2BE5583800B48CB9 /* StudentModel.swift */,
 				2B2EA5AF2BE2BF0200707F13 /* DBManager.swift */,
 				2B429B7C2BBB02AB00E7A806 /* AppDelegate.swift */,
 				2B429B7E2BBB02AB00E7A806 /* SceneDelegate.swift */,
@@ -183,6 +186,7 @@
 				2BB72BC22BC06E38001419C9 /* LoginViewController.swift in Sources */,
 				2B7EE93E2BD01D7600546FD0 /* SignupViewController.swift in Sources */,
 				2B6D06C12BCDA688003444AF /* SliderTableViewCell.swift in Sources */,
+				2BFEA9C02BE5583800B48CB9 /* StudentModel.swift in Sources */,
 				2BE69ED32BCD88B500D480AE /* HomeTableViewCell.swift in Sources */,
 				2B6D06C92BCEFA38003444AF /* GridCollectionViewCell.swift in Sources */,
 				2B429B7D2BBB02AB00E7A806 /* AppDelegate.swift in Sources */,

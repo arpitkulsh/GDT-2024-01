@@ -83,7 +83,7 @@ class DBManager: NSObject {
         return []
     }
     
-    func updateData(withEntity: String, with dataModel: StudentModel) -> Bool 
+    func updateData(withEntity: String, with dataModel: StudentModel) -> Bool
     {
         var fetchResult: [NSManagedObject] = []
         
@@ -129,5 +129,34 @@ class DBManager: NSObject {
        
         return false
     }
+    
+    
+    func addPersitentStore()
+    {
+        let application = UIApplication.shared
+        let appDelegate = application.delegate as? AppDelegate
+        let container = appDelegate?.persistentContainer
+        
+        let storeCordinator = container?.persistentStoreCoordinator
+        
+        let defaultURL = NSPersistentContainer.defaultDirectoryURL()
+        
+        let storeURL = defaultURL.appendingPathComponent("Sample.sqlite")
+        
+        do {
+           let store = try storeCordinator?.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
+        }
+        catch {
+            print(error)
+        }
+        
+        
+    }
+    
+    
+
+    
+
 }
+
 
