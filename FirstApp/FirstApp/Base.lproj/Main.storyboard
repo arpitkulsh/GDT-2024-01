@@ -263,30 +263,42 @@
             </objects>
             <point key="canvasLocation" x="2034.3511450381679" y="486.61971830985919"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Image Picking Controller-->
         <scene sceneID="2fE-T5-e7Z">
             <objects>
-                <viewController id="wAH-py-oJ2" customClass="LoginViewController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wAH-py-oJ2" customClass="ImagePickingController" customModule="FirstApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X6W-1M-7Xh">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="C40-Z8-L2U">
-                                <rect key="frame" x="48" y="86" width="286" height="106"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ccb-PS-gfM">
+                                <rect key="frame" x="71" y="164" width="288" height="185"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="bZa-uB-qCd" appends="YES" id="gpb-Z2-5FN"/>
-                                </connections>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="VXe-At-a3B">
-                                <rect key="frame" x="50" y="304" width="330" height="271"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4G-rW-zRQ">
+                                <rect key="frame" x="91" y="542" width="246" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Camera">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                </buttonConfiguration>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="7Im-Z2-sJY" appends="YES" id="bX4-9h-soC"/>
+                                    <action selector="takePhotoFromCamera:" destination="wAH-py-oJ2" eventType="touchUpInside" id="IhL-qQ-jvi"/>
                                 </connections>
-                            </imageView>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9z-pl-FeA">
+                                <rect key="frame" x="92" y="630" width="246" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gallery">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="takePhotoFromGallery:" destination="wAH-py-oJ2" eventType="touchUpInside" id="Xx4-OG-8uf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jel-hd-q3F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -294,20 +306,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Qz3-wn-YHq"/>
                     <connections>
-                        <outlet property="tapGesture" destination="bZa-uB-qCd" id="rRr-E9-7wY"/>
+                        <outlet property="imageView" destination="Ccb-PS-gfM" id="Ns8-CL-qQn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HUF-UU-GuI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="bZa-uB-qCd">
-                    <connections>
-                        <action selector="tapHandle:" destination="wAH-py-oJ2" id="JTh-MI-jIP"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <rotationGestureRecognizer id="7Im-Z2-sJY">
-                    <connections>
-                        <action selector="handleRotate:" destination="wAH-py-oJ2" id="TbT-pS-YtH"/>
-                    </connections>
-                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2846.5116279069766" y="1443.9914163090129"/>
         </scene>
@@ -377,6 +379,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

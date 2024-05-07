@@ -20,6 +20,7 @@
 		2B6D06C32BCEEF9B003444AF /* Country.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B6D06C22BCEEF9B003444AF /* Country.plist */; };
 		2B6D06C72BCEF91F003444AF /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D06C62BCEF91F003444AF /* GridViewController.swift */; };
 		2B6D06C92BCEFA38003444AF /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D06C82BCEFA38003444AF /* GridCollectionViewCell.swift */; };
+		2B74B30A2BEAA3F300A3FF51 /* ImagePickingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B74B3092BEAA3F300A3FF51 /* ImagePickingController.swift */; };
 		2B7EE93E2BD01D7600546FD0 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7EE93D2BD01D7600546FD0 /* SignupViewController.swift */; };
 		2B7EE9402BD04DA900546FD0 /* FAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7EE93F2BD04DA900546FD0 /* FAButton.swift */; };
 		2B7EE9422BD2F89600546FD0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7EE9412BD2F89600546FD0 /* CustomCell.swift */; };
@@ -45,6 +46,7 @@
 		2B6D06C22BCEEF9B003444AF /* Country.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Country.plist; sourceTree = "<group>"; };
 		2B6D06C62BCEF91F003444AF /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		2B6D06C82BCEFA38003444AF /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		2B74B3092BEAA3F300A3FF51 /* ImagePickingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickingController.swift; sourceTree = "<group>"; };
 		2B7EE93D2BD01D7600546FD0 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2B7EE93F2BD04DA900546FD0 /* FAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAButton.swift; sourceTree = "<group>"; };
 		2B7EE9412BD2F89600546FD0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				2B6D06C82BCEFA38003444AF /* GridCollectionViewCell.swift */,
 				2B7EE93F2BD04DA900546FD0 /* FAButton.swift */,
 				2B7EE9412BD2F89600546FD0 /* CustomCell.swift */,
+				2B74B3092BEAA3F300A3FF51 /* ImagePickingController.swift */,
 				2B6D06C22BCEEF9B003444AF /* Country.plist */,
 				2B429B822BBB02AB00E7A806 /* Main.storyboard */,
 				2B429B872BBB02AD00E7A806 /* LaunchScreen.storyboard */,
@@ -183,6 +186,7 @@
 			files = (
 				2B6D06BF2BCDA67D003444AF /* SubmitCell.swift in Sources */,
 				2B7EE9422BD2F89600546FD0 /* CustomCell.swift in Sources */,
+				2B74B30A2BEAA3F300A3FF51 /* ImagePickingController.swift in Sources */,
 				2BB72BC22BC06E38001419C9 /* LoginViewController.swift in Sources */,
 				2B7EE93E2BD01D7600546FD0 /* SignupViewController.swift in Sources */,
 				2B6D06C12BCDA688003444AF /* SliderTableViewCell.swift in Sources */,
