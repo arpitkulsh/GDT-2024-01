@@ -128,6 +128,21 @@
                   endingLineNumber = "178"
                   offsetFromSymbolStart = "56">
                </Location>
+               <Location
+                  uuid = "3CFADB97-5DBA-4CDC-B38E-3EBE6C5015E7 - 1d3c2cd436392af0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FirstApp.LoginViewController.tapHandle(__C.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "FirstApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "179"
+                  endingLineNumber = "179"
+                  offsetFromSymbolStart = "56">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
