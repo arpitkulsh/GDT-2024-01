@@ -5,9 +5,44 @@
 //  Created by Arpit on 07/05/24.
 //
 
+// MVC Architecture - Model View Controller
+
+
 import UIKit
 import Foundation
 import Dispatch
+
+
+let jsonData = """
+    [
+    {
+        "country": "Canada",
+        "web_pages": [
+            "https://www.cstj.qc.ca",
+            "https://ccmt.cstj.qc.ca",
+            "https://ccml.cstj.qc.ca"
+        ],
+        "alpha_two_code": "CA",
+        "domains": [
+            "cstj.qc.ca"
+        ],
+        "state-province": "Quebec",
+        "name": "Cégep de Saint-Jérôme"
+    },
+    {
+        "country": "Canada",
+        "web_pages": [
+            "https://www.lambtoncollege.ca"
+        ],
+        "alpha_two_code": "CA",
+        "domains": [
+            "lambtoncollege.ca",
+            "mylambton.ca"
+        ],
+        "state-province": "Ontario",
+        "name": "Lambton College"
+    }]
+"""
 
 
 class MyOperations: Operation {
@@ -34,6 +69,7 @@ class ImagePickingController: UIViewController, UIImagePickerControllerDelegate,
     @IBOutlet weak var imageView: UIImageView!
     var image: UIImage!
     let imagePicker = UIImagePickerController()
+    var universityCanada: [University] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +82,27 @@ class ImagePickingController: UIViewController, UIImagePickerControllerDelegate,
         // post message
         // receive message
         // key ==> Same
+        self.jsonDecode()
+    }
+    
+    
+    func jsonDecode() {
+        
+        let jsonDecoder = JSONDecoder()
+        let data = jsonData.data(using: .utf8)
+        do {
+            if let jsonDataCode = data {
+                let university = try jsonDecoder.decode([University].self, from: jsonDataCode)
+                self.universityCanada = university
+                
+                print(self.universityCanada[0].country!)
+                print(self.universityCanada[1].country!)
+            }
+            
+        }
+        catch {
+            print(error)
+        }
     }
     
     
@@ -211,10 +268,9 @@ class ImagePickingController: UIViewController, UIImagePickerControllerDelegate,
         
     }
     
-    func fetchData() async -> Data {
-        let data = try await getDataFromNetwork()
+    func fetchData() async  {
+        let data = try await testAsynAwait()
         
-        return data
     }
     
     

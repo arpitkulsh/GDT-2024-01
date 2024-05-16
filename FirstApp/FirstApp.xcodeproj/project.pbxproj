@@ -24,6 +24,7 @@
 		2B7EE93E2BD01D7600546FD0 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7EE93D2BD01D7600546FD0 /* SignupViewController.swift */; };
 		2B7EE9402BD04DA900546FD0 /* FAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7EE93F2BD04DA900546FD0 /* FAButton.swift */; };
 		2B7EE9422BD2F89600546FD0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7EE9412BD2F89600546FD0 /* CustomCell.swift */; };
+		2BB391EE2BF67DD000826B3B /* APIUniversity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB391ED2BF67DD000826B3B /* APIUniversity.swift */; };
 		2BB72BC02BC06DD9001419C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72BBF2BC06DD9001419C9 /* HomeViewController.swift */; };
 		2BB72BC22BC06E38001419C9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72BC12BC06E38001419C9 /* LoginViewController.swift */; };
 		2BE69ED32BCD88B500D480AE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE69ED22BCD88B500D480AE /* HomeTableViewCell.swift */; };
@@ -50,6 +51,7 @@
 		2B7EE93D2BD01D7600546FD0 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2B7EE93F2BD04DA900546FD0 /* FAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAButton.swift; sourceTree = "<group>"; };
 		2B7EE9412BD2F89600546FD0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		2BB391ED2BF67DD000826B3B /* APIUniversity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIUniversity.swift; sourceTree = "<group>"; };
 		2BB72BBF2BC06DD9001419C9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2BB72BC12BC06E38001419C9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2BE69ED22BCD88B500D480AE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				2B429B872BBB02AD00E7A806 /* LaunchScreen.storyboard */,
 				2B429B852BBB02AD00E7A806 /* Assets.xcassets */,
 				2B429B8A2BBB02AD00E7A806 /* Info.plist */,
+				2BB391ED2BF67DD000826B3B /* APIUniversity.swift */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				2B6D06C12BCDA688003444AF /* SliderTableViewCell.swift in Sources */,
 				2BFEA9C02BE5583800B48CB9 /* StudentModel.swift in Sources */,
 				2BE69ED32BCD88B500D480AE /* HomeTableViewCell.swift in Sources */,
+				2BB391EE2BF67DD000826B3B /* APIUniversity.swift in Sources */,
 				2B6D06C92BCEFA38003444AF /* GridCollectionViewCell.swift in Sources */,
 				2B429B7D2BBB02AB00E7A806 /* AppDelegate.swift in Sources */,
 				2B6D06BD2BCDA2CD003444AF /* FormFieldViewCell.swift in Sources */,
