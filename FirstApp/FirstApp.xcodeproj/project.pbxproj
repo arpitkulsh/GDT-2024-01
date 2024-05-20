@@ -14,6 +14,7 @@
 		2B429B862BBB02AD00E7A806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B429B852BBB02AD00E7A806 /* Assets.xcassets */; };
 		2B429B892BBB02AD00E7A806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B429B872BBB02AD00E7A806 /* LaunchScreen.storyboard */; };
 		2B4953962BD6E6ED00E59691 /* FAFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4953952BD6E6ED00E59691 /* FAFileManager.swift */; };
+		2B5C5C772BFBBED7002DAF5D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5C5C762BFBBED7002DAF5D /* NetworkManager.swift */; };
 		2B6D06BD2BCDA2CD003444AF /* FormFieldViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D06BC2BCDA2CD003444AF /* FormFieldViewCell.swift */; };
 		2B6D06BF2BCDA67D003444AF /* SubmitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D06BE2BCDA67D003444AF /* SubmitCell.swift */; };
 		2B6D06C12BCDA688003444AF /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D06C02BCDA688003444AF /* SliderTableViewCell.swift */; };
@@ -41,6 +42,7 @@
 		2B429B882BBB02AD00E7A806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B429B8A2BBB02AD00E7A806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B4953952BD6E6ED00E59691 /* FAFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAFileManager.swift; sourceTree = "<group>"; };
+		2B5C5C762BFBBED7002DAF5D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2B6D06BC2BCDA2CD003444AF /* FormFieldViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldViewCell.swift; sourceTree = "<group>"; };
 		2B6D06BE2BCDA67D003444AF /* SubmitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitCell.swift; sourceTree = "<group>"; };
 		2B6D06C02BCDA688003444AF /* SliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				2B7EE93F2BD04DA900546FD0 /* FAButton.swift */,
 				2B7EE9412BD2F89600546FD0 /* CustomCell.swift */,
 				2B74B3092BEAA3F300A3FF51 /* ImagePickingController.swift */,
+				2B5C5C762BFBBED7002DAF5D /* NetworkManager.swift */,
 				2B6D06C22BCEEF9B003444AF /* Country.plist */,
 				2B429B822BBB02AB00E7A806 /* Main.storyboard */,
 				2B429B872BBB02AD00E7A806 /* LaunchScreen.storyboard */,
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5C5C772BFBBED7002DAF5D /* NetworkManager.swift in Sources */,
 				2B6D06BF2BCDA67D003444AF /* SubmitCell.swift in Sources */,
 				2B7EE9422BD2F89600546FD0 /* CustomCell.swift in Sources */,
 				2B74B30A2BEAA3F300A3FF51 /* ImagePickingController.swift in Sources */,

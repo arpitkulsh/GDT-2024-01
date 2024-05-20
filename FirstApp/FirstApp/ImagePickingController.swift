@@ -82,22 +82,75 @@ class ImagePickingController: UIViewController, UIImagePickerControllerDelegate,
         // post message
         // receive message
         // key ==> Same
-        self.jsonDecode()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+//        DispatchQueue.global().async {
+//            self.fetchData()
+//        }
+        
+        DispatchQueue.global().async {
+            self.fetchImage()
+        }
+    }
+    
+    func fetchImage() {
+        let networkManager = NetworkManager.shared
+        let urlStr = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"
+        
+        
+        networkManager.request(urlString: urlStr, method: .GET, body: nil, completion: { result in
+            
+            switch result
+            {
+            case .success(let data):
+                print("Success")
+               let image = UIImage(data: data)
+                DispatchQueue.main.async {
+                    self.imageView.image = image
+                }
+            case .failure(let error):
+                print(error)
+            }
+            
+        })
+    }
+    
+    func fetchData() {
+        let networkManager = NetworkManager.shared
+        let urlStr = "http://universities.hipolabs.com/search?country=Canada"
+        
+        networkManager.request(urlString: urlStr, method: .GET, body: nil, completion: { result in
+            
+            switch result 
+            {
+            case .success(let data):
+                print("Success")
+                self.jsonDecode(data: data)
+            case .failure(let error):
+                print(error)
+            }
+            
+        })
+        
+        
     }
     
     
-    func jsonDecode() {
+    func jsonDecode(data: Data) {
         
         let jsonDecoder = JSONDecoder()
-        let data = jsonData.data(using: .utf8)
+
         do {
-            if let jsonDataCode = data {
-                let university = try jsonDecoder.decode([University].self, from: jsonDataCode)
+                let university = try jsonDecoder.decode([University].self, from: data)
                 self.universityCanada = university
-                
+                print(self.universityCanada.count)
+            
                 print(self.universityCanada[0].country!)
                 print(self.universityCanada[1].country!)
-            }
+            
             
         }
         catch {
