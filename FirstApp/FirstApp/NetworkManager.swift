@@ -70,12 +70,6 @@ class NetworkManager: NSObject {
             
         })
         
-//        let task1 = URLSession.shared.downloadTask(with: request, completionHandler: { url, response , error in
-//            if let error = error {
-//                completion(.failure(error))
-//                return
-//            }
-//        })
             
             
 

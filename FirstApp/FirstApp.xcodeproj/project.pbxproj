@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0C29092BFD1C0C00C1C011 /* UniversityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C29082BFD1C0C00C1C011 /* UniversityTableViewCell.swift */; };
 		2B2EA5B02BE2BF0200707F13 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2EA5AF2BE2BF0200707F13 /* DBManager.swift */; };
 		2B429B7D2BBB02AB00E7A806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B429B7C2BBB02AB00E7A806 /* AppDelegate.swift */; };
 		2B429B7F2BBB02AB00E7A806 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B429B7E2BBB02AB00E7A806 /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0C29082BFD1C0C00C1C011 /* UniversityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityTableViewCell.swift; sourceTree = "<group>"; };
 		2B2EA5AF2BE2BF0200707F13 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		2B429B792BBB02AB00E7A806 /* FirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B429B7C2BBB02AB00E7A806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +99,6 @@
 				2B4953952BD6E6ED00E59691 /* FAFileManager.swift */,
 				2BB72BC12BC06E38001419C9 /* LoginViewController.swift */,
 				2BB72BBF2BC06DD9001419C9 /* HomeViewController.swift */,
-				2B7EE93D2BD01D7600546FD0 /* SignupViewController.swift */,
 				2BE69ED22BCD88B500D480AE /* HomeTableViewCell.swift */,
 				2B6D06BC2BCDA2CD003444AF /* FormFieldViewCell.swift */,
 				2B6D06C02BCDA688003444AF /* SliderTableViewCell.swift */,
@@ -107,6 +108,7 @@
 				2B7EE93F2BD04DA900546FD0 /* FAButton.swift */,
 				2B7EE9412BD2F89600546FD0 /* CustomCell.swift */,
 				2B74B3092BEAA3F300A3FF51 /* ImagePickingController.swift */,
+				2B7EE93D2BD01D7600546FD0 /* SignupViewController.swift */,
 				2B5C5C762BFBBED7002DAF5D /* NetworkManager.swift */,
 				2B6D06C22BCEEF9B003444AF /* Country.plist */,
 				2B429B822BBB02AB00E7A806 /* Main.storyboard */,
@@ -114,6 +116,7 @@
 				2B429B852BBB02AD00E7A806 /* Assets.xcassets */,
 				2B429B8A2BBB02AD00E7A806 /* Info.plist */,
 				2BB391ED2BF67DD000826B3B /* APIUniversity.swift */,
+				2B0C29082BFD1C0C00C1C011 /* UniversityTableViewCell.swift */,
 			);
 			path = FirstApp;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				2B6D06C12BCDA688003444AF /* SliderTableViewCell.swift in Sources */,
 				2BFEA9C02BE5583800B48CB9 /* StudentModel.swift in Sources */,
 				2BE69ED32BCD88B500D480AE /* HomeTableViewCell.swift in Sources */,
+				2B0C29092BFD1C0C00C1C011 /* UniversityTableViewCell.swift in Sources */,
 				2BB391EE2BF67DD000826B3B /* APIUniversity.swift in Sources */,
 				2B6D06C92BCEFA38003444AF /* GridCollectionViewCell.swift in Sources */,
 				2B429B7D2BBB02AB00E7A806 /* AppDelegate.swift in Sources */,

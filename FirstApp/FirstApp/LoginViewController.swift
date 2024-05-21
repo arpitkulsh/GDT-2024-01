@@ -263,14 +263,14 @@ class LoginViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "nextSegueAction" {
          let signupVC = segue.destination as? SignupViewController
-            signupVC?.dummyArray = ["Apple", "Orange"]
+            //signupVC?.dummyArray = ["Apple", "Orange"]
         }
     }
     
     @IBAction func nextAction(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let destinationVC = storyboard.instantiateViewController(withIdentifier: "signupDestinationID") as? SignupViewController
-        destinationVC?.dummyArray = ["Apple", "Orange"]
+       // destinationVC?.dummyArray = ["Apple", "Orange"]
         self.navigationController?.pushViewController(destinationVC!, animated: true)
     }
     
