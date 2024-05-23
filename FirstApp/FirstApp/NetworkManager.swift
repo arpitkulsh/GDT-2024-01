@@ -50,6 +50,16 @@ class NetworkManager: NSObject {
             request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         }
         
+        // Base authentication
+        /*
+        let credStr = "any formula"
+        
+        let logindata = credStr.data(using: .utf8)
+        
+        let base64 = logindata?.base64EncodedString()
+        
+        request.setValue(base64, forHTTPHeaderField: "Authorization")
+        */
         request.timeoutInterval = 20.0 // timeout error
         
         // 3. Make Actual Session URL
