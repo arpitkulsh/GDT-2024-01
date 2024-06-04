@@ -13,38 +13,6 @@ import Foundation
 import Dispatch
 
 
-let jsonData = """
-    [
-    {
-        "country": "Canada",
-        "web_pages": [
-            "https://www.cstj.qc.ca",
-            "https://ccmt.cstj.qc.ca",
-            "https://ccml.cstj.qc.ca"
-        ],
-        "alpha_two_code": "CA",
-        "domains": [
-            "cstj.qc.ca"
-        ],
-        "state-province": "Quebec",
-        "name": "Cégep de Saint-Jérôme"
-    },
-    {
-        "country": "Canada",
-        "web_pages": [
-            "https://www.lambtoncollege.ca"
-        ],
-        "alpha_two_code": "CA",
-        "domains": [
-            "lambtoncollege.ca",
-            "mylambton.ca"
-        ],
-        "state-province": "Ontario",
-        "name": "Lambton College"
-    }]
-"""
-
-
 class MyOperations: Operation {
     
     override func main() {
@@ -98,7 +66,7 @@ class ImagePickingController: UIViewController, UIImagePickerControllerDelegate,
     
     func fetchImage() {
         let networkManager = NetworkManager.shared
-        let urlStr = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png"
+        let urlStr = "https://images.unsplash.com/profile-1446404465118-3a53b909cc82?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&fit=crop&h=128&w=128&s=27a346c2362207494baa7b76f5d606e5"
         
         
         networkManager.request(urlString: urlStr, method: .GET, body: nil, completion: { result in

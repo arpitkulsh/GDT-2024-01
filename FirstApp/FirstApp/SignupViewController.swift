@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SignupViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -23,7 +24,19 @@ class SignupViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidAppear(animated)
         
         DispatchQueue.global().async {
-            self.fetchData()
+            self.fetchData1()
+        }
+    }
+    
+    
+    func fetchData1() {
+        let urlStr = "http://universities.hipolabs.com/search?country=Canada"
+        
+        let result = AF.request(urlStr).response { response in
+            if response.error == nil {
+                self.jsonDecode(data: response.data!)
+            }
+          
         }
     }
     

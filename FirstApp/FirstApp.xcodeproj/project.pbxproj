@@ -23,6 +23,7 @@
 		2B6D06C72BCEF91F003444AF /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D06C62BCEF91F003444AF /* GridViewController.swift */; };
 		2B6D06C92BCEFA38003444AF /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D06C82BCEFA38003444AF /* GridCollectionViewCell.swift */; };
 		2B74B30A2BEAA3F300A3FF51 /* ImagePickingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B74B3092BEAA3F300A3FF51 /* ImagePickingController.swift */; };
+		2B7C3FA12C0E3DAC00AA34F1 /* FALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7C3FA02C0E3DAC00AA34F1 /* FALocationManager.swift */; };
 		2B7EE93E2BD01D7600546FD0 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7EE93D2BD01D7600546FD0 /* SignupViewController.swift */; };
 		2B7EE9402BD04DA900546FD0 /* FAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7EE93F2BD04DA900546FD0 /* FAButton.swift */; };
 		2B7EE9422BD2F89600546FD0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7EE9412BD2F89600546FD0 /* CustomCell.swift */; };
@@ -30,6 +31,8 @@
 		2BB72BC02BC06DD9001419C9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72BBF2BC06DD9001419C9 /* HomeViewController.swift */; };
 		2BB72BC22BC06E38001419C9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB72BC12BC06E38001419C9 /* LoginViewController.swift */; };
 		2BE69ED32BCD88B500D480AE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE69ED22BCD88B500D480AE /* HomeTableViewCell.swift */; };
+		2BEEB6802C01135300791A05 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2BEEB67F2C01135300791A05 /* Alamofire */; };
+		2BEEB6822C01135300791A05 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2BEEB6812C01135300791A05 /* AlamofireDynamic */; };
 		2BFEA9C02BE5583800B48CB9 /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFEA9BF2BE5583800B48CB9 /* StudentModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,7 @@
 		2B6D06C62BCEF91F003444AF /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		2B6D06C82BCEFA38003444AF /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
 		2B74B3092BEAA3F300A3FF51 /* ImagePickingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickingController.swift; sourceTree = "<group>"; };
+		2B7C3FA02C0E3DAC00AA34F1 /* FALocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FALocationManager.swift; sourceTree = "<group>"; };
 		2B7EE93D2BD01D7600546FD0 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2B7EE93F2BD04DA900546FD0 /* FAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAButton.swift; sourceTree = "<group>"; };
 		2B7EE9412BD2F89600546FD0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEEB6802C01135300791A05 /* Alamofire in Frameworks */,
+				2BEEB6822C01135300791A05 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +116,7 @@
 				2B74B3092BEAA3F300A3FF51 /* ImagePickingController.swift */,
 				2B7EE93D2BD01D7600546FD0 /* SignupViewController.swift */,
 				2B5C5C762BFBBED7002DAF5D /* NetworkManager.swift */,
+				2B7C3FA02C0E3DAC00AA34F1 /* FALocationManager.swift */,
 				2B6D06C22BCEEF9B003444AF /* Country.plist */,
 				2B429B822BBB02AB00E7A806 /* Main.storyboard */,
 				2B429B872BBB02AD00E7A806 /* LaunchScreen.storyboard */,
@@ -137,6 +144,10 @@
 			dependencies = (
 			);
 			name = FirstApp;
+			packageProductDependencies = (
+				2BEEB67F2C01135300791A05 /* Alamofire */,
+				2BEEB6812C01135300791A05 /* AlamofireDynamic */,
+			);
 			productName = FirstApp;
 			productReference = 2B429B792BBB02AB00E7A806 /* FirstApp.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +176,9 @@
 				Base,
 			);
 			mainGroup = 2B429B702BBB02AB00E7A806;
+			packageReferences = (
+				2BEEB67E2C01135300791A05 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 2B429B7A2BBB02AB00E7A806 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -203,6 +217,7 @@
 				2BFEA9C02BE5583800B48CB9 /* StudentModel.swift in Sources */,
 				2BE69ED32BCD88B500D480AE /* HomeTableViewCell.swift in Sources */,
 				2B0C29092BFD1C0C00C1C011 /* UniversityTableViewCell.swift in Sources */,
+				2B7C3FA12C0E3DAC00AA34F1 /* FALocationManager.swift in Sources */,
 				2BB391EE2BF67DD000826B3B /* APIUniversity.swift in Sources */,
 				2B6D06C92BCEFA38003444AF /* GridCollectionViewCell.swift in Sources */,
 				2B429B7D2BBB02AB00E7A806 /* AppDelegate.swift in Sources */,
@@ -290,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -347,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -365,6 +380,8 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1000;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -395,6 +412,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1000;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FirstApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -439,6 +457,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2BEEB67E2C01135300791A05 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2BEEB67F2C01135300791A05 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BEEB67E2C01135300791A05 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2BEEB6812C01135300791A05 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BEEB67E2C01135300791A05 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B429B712BBB02AB00E7A806 /* Project object */;
 }

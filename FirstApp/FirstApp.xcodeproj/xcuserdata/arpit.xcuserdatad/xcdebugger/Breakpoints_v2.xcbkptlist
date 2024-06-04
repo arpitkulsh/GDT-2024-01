@@ -94,57 +94,10 @@
             filePath = "FirstApp/ImagePickingController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "jsonDecode(data:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "414670E0-D1E4-4A10-9D92-A4CE4A6340E8 - 94f477294d0afaf5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable () -&gt; () in FirstApp.ImagePickingController.learnGCD() -&gt; ()"
-                  moduleName = "FirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/ImagePickingController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "149"
-                  endingLineNumber = "149"
-                  offsetFromSymbolStart = "396">
-               </Location>
-               <Location
-                  uuid = "414670E0-D1E4-4A10-9D92-A4CE4A6340E8 - cd7a913093a7c5d6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable () -&gt; () in FirstApp.ImagePickingController.learnGCD() -&gt; ()"
-                  moduleName = "FirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/ImagePickingController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "151"
-                  endingLineNumber = "151"
-                  offsetFromSymbolStart = "88">
-               </Location>
-               <Location
-                  uuid = "414670E0-D1E4-4A10-9D92-A4CE4A6340E8 - fe88d6e9ef13c721"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FirstApp.ImagePickingController.jsonDecode(data: Foundation.Data) -&gt; ()"
-                  moduleName = "FirstApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/ImagePickingController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "149"
-                  endingLineNumber = "149"
-                  offsetFromSymbolStart = "332">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -157,42 +110,120 @@
             filePath = "FirstApp/ImagePickingController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "jsonDecode(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "541950C4-C197-41D1-A9F3-C39FAD6348A4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirstApp/ImagePickingController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "fetchImage()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "724ECC3D-A776-4491-B064-6F544113D5CB - bf7333494cae427e"
+                  uuid = "541950C4-C197-41D1-A9F3-C39FAD6348A4 - 4e77eebfe6b931de"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "FirstApp.ImagePickingController.learnGCD() -&gt; ()"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Swift.Error&gt;) -&gt; () in FirstApp.ImagePickingController.fetchImage() -&gt; ()"
                   moduleName = "FirstApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/ImagePickingController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "420">
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "356">
                </Location>
                <Location
-                  uuid = "724ECC3D-A776-4491-B064-6F544113D5CB - fe88d6e9ef13c446"
+                  uuid = "541950C4-C197-41D1-A9F3-C39FAD6348A4 - 4e77eebfe6b931de"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "FirstApp.ImagePickingController.jsonDecode(data: Foundation.Data) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.URL, Swift.Error&gt;) -&gt; () in FirstApp.ImagePickingController.fetchImage() -&gt; ()"
                   moduleName = "FirstApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/ImagePickingController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "152">
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "541950C4-C197-41D1-A9F3-C39FAD6348A4 - 7e593b2b53de65e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in FirstApp.ImagePickingController.fetchImage() -&gt; ()"
+                  moduleName = "FirstApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/ImagePickingController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "541950C4-C197-41D1-A9F3-C39FAD6348A4 - 7e593b2b53de65e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Foundation.Data, Swift.Error&gt;) -&gt; () in FirstApp.ImagePickingController.fetchImage() -&gt; ()"
+                  moduleName = "FirstApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arpit/Documents/GitHub/GDT-2024-01/FirstApp/FirstApp/ImagePickingController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "320">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35DC3745-1DAD-48DD-B1F2-EFB9DE8022BA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirstApp/SignupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "jsonDecode(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4FCDDC89-FDA2-415B-9EE3-1CC33B6B2810"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FirstApp/SignupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "jsonDecode(data:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

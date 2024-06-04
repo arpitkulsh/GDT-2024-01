@@ -80,9 +80,38 @@ class NetworkManager: NSObject {
             
         })
         
+        task.resume()
+        
+    }
+    
+    func requestDownload(urlString: String, method: HTTPMethod, body: Data?, completion: @escaping (Result<URL, Error>) -> Void) {
+        // 1. Step - Make URL
+        guard let url = URL(string: urlString) else {
+            completion(.failure(NetworkError.invalidURL))
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = method.rawValue
+        
+        
+        let task = URLSession.shared.downloadTask(with: request, completionHandler: { fileUrl, response, error in
             
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
             
-
+            guard let fileUrl = fileUrl else  {
+                completion(.failure(NetworkError.noData))
+                return
+            }
+            
+            completion(.success(fileUrl))
+        
+            
+        })
+        
         task.resume()
         
     }
