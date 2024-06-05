@@ -30,5 +30,24 @@ class FALocationManager: NSObject, CLLocationManagerDelegate
         locationManager.delegate = self
         
         locationManager.activityType = CLActivityType.otherNavigation
+        locationManager.distanceFilter = 1000.0
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        locationManager.pausesLocationUpdatesAutomatically = false
+        locationManager.allowsBackgroundLocationUpdates = true
+        
+        if CLLocationManager.locationServicesEnabled() {
+            requestLocationAuthorization()
+        }
+    }
+    
+    
+    func requestLocationAuthorization() {
+        let status = locationManager.authorizationStatus
+        
+        if status == .notDetermined {
+            locationManager.requestAlwaysAuthorization()
+        }
+        
+        
     }
 }
