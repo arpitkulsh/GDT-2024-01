@@ -7,16 +7,19 @@
 
 import UIKit
 import Alamofire
+import MapKit
 
-class SignupViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SignupViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate {
     
     
     @IBOutlet weak var universityTable: UITableView!
+    @IBOutlet weak var mapView: MKMapView!
     var universityData: [University] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         universityTable.delegate = self
         universityTable.dataSource = self
+        mapView.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -26,6 +29,19 @@ class SignupViewController: UIViewController, UITableViewDelegate, UITableViewDa
         DispatchQueue.global().async {
             self.fetchData1()
         }
+        
+    
+        let location = FALocationManager.sharedInstance
+        location.setupLocation()
+        location.startTracking()
+        
+    
+    }
+    
+    @IBAction func dropPin(sender: UIButton) {
+        let location = FALocationManager.sharedInstance
+        let cordinate = location.userLocation?.coordinate
+        self.setupPin(location: cordinate!)
     }
     
     
@@ -91,8 +107,15 @@ class SignupViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.country.text = object.state
         
         return cell
+    }
+    
+    func setupPin(location: CLLocationCoordinate2D) {
+        // MKPlacemark
         
-        
+        let pin = MKPlacemark(coordinate: location)
+        let region = MKCoordinateRegion.init(center: location, latitudinalMeters: 800, longitudinalMeters: 800)
+        mapView.setRegion(region, animated: true)
+        mapView.addAnnotation(pin)
     }
     
 

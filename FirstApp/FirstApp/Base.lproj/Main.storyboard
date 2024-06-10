@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -365,24 +366,47 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nsR-uq-yb0">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kk-sU-fzu">
+                                <rect key="frame" x="71" y="828" width="310" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="1I6-my-rKA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Drop Pin"/>
+                                <connections>
+                                    <action selector="dropPinWithSender:" destination="6ds-GS-DfD" eventType="touchUpInside" id="3if-Fn-OXi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="npq-4k-U6K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="XC6-Ac-pEH" secondAttribute="bottom" id="AAh-vp-4EN"/>
                             <constraint firstItem="XC6-Ac-pEH" firstAttribute="top" secondItem="npq-4k-U6K" secondAttribute="top" id="CZd-rr-L70"/>
+                            <constraint firstItem="4Kk-sU-fzu" firstAttribute="leading" secondItem="npq-4k-U6K" secondAttribute="leading" constant="71" id="IXb-bC-adZ"/>
+                            <constraint firstItem="nsR-uq-yb0" firstAttribute="bottom" secondItem="XC6-Ac-pEH" secondAttribute="bottom" id="Kma-SJ-VBR"/>
                             <constraint firstItem="XC6-Ac-pEH" firstAttribute="leading" secondItem="npq-4k-U6K" secondAttribute="leading" id="OVd-at-3aS"/>
+                            <constraint firstItem="nsR-uq-yb0" firstAttribute="leading" secondItem="XC6-Ac-pEH" secondAttribute="leading" id="TrV-Ov-B2U"/>
+                            <constraint firstItem="nsR-uq-yb0" firstAttribute="trailing" secondItem="XC6-Ac-pEH" secondAttribute="trailing" id="Vft-a2-zIU"/>
                             <constraint firstItem="XC6-Ac-pEH" firstAttribute="trailing" secondItem="npq-4k-U6K" secondAttribute="trailing" id="fZt-kq-F2S"/>
+                            <constraint firstItem="npq-4k-U6K" firstAttribute="bottom" secondItem="4Kk-sU-fzu" secondAttribute="bottom" constant="21" id="rPu-eN-rGY"/>
+                            <constraint firstItem="npq-4k-U6K" firstAttribute="trailing" secondItem="4Kk-sU-fzu" secondAttribute="trailing" constant="49" id="t6S-5Q-fB4"/>
+                            <constraint firstItem="nsR-uq-yb0" firstAttribute="top" secondItem="Z5t-r3-8oD" secondAttribute="top" id="ziz-cL-mfJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dSf-Gz-1K1"/>
                     <connections>
+                        <outlet property="mapView" destination="nsR-uq-yb0" id="Phv-eX-BSH"/>
                         <outlet property="universityTable" destination="XC6-Ac-pEH" id="kL4-gU-aN5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZn-Q4-rr2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4578.1395348837204" y="1443.9914163090129"/>
+            <point key="canvasLocation" x="4576.7441860465115" y="1443.9914163090129"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RrD-nV-p6R">
