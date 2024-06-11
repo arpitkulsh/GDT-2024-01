@@ -15,6 +15,10 @@
 		2B59FFD02C17770700D9BE68 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FFCF2C17770700D9BE68 /* ColorView.swift */; };
 		2B59FFD22C1779EB00D9BE68 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FFD12C1779EB00D9BE68 /* GradientView.swift */; };
 		2B59FFD42C177C0400D9BE68 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FFD32C177C0400D9BE68 /* IconView.swift */; };
+		2B59FFD62C18C37400D9BE68 /* BackgroundOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FFD52C18C37400D9BE68 /* BackgroundOverlay.swift */; };
+		2B59FFD82C18C83000D9BE68 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FFD72C18C83000D9BE68 /* AlertView.swift */; };
+		2B59FFDA2C18CC0D00D9BE68 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FFD92C18CC0D00D9BE68 /* ColorPickerView.swift */; };
+		2B59FFDC2C18CE0800D9BE68 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FFDB2C18CE0800D9BE68 /* DatePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		2B59FFCF2C17770700D9BE68 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		2B59FFD12C1779EB00D9BE68 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		2B59FFD32C177C0400D9BE68 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		2B59FFD52C18C37400D9BE68 /* BackgroundOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundOverlay.swift; sourceTree = "<group>"; };
+		2B59FFD72C18C83000D9BE68 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		2B59FFD92C18CC0D00D9BE68 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		2B59FFDB2C18CE0800D9BE68 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,10 @@
 				2B59FFCF2C17770700D9BE68 /* ColorView.swift */,
 				2B59FFD12C1779EB00D9BE68 /* GradientView.swift */,
 				2B59FFD32C177C0400D9BE68 /* IconView.swift */,
+				2B59FFD52C18C37400D9BE68 /* BackgroundOverlay.swift */,
+				2B59FFD72C18C83000D9BE68 /* AlertView.swift */,
+				2B59FFD92C18CC0D00D9BE68 /* ColorPickerView.swift */,
+				2B59FFDB2C18CE0800D9BE68 /* DatePicker.swift */,
 				2B59FF9D2C176A8700D9BE68 /* Assets.xcassets */,
 				2B59FF9F2C176A8700D9BE68 /* Preview Content */,
 			);
@@ -152,11 +164,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B59FFD02C17770700D9BE68 /* ColorView.swift in Sources */,
+				2B59FFD62C18C37400D9BE68 /* BackgroundOverlay.swift in Sources */,
 				2B59FFD42C177C0400D9BE68 /* IconView.swift in Sources */,
 				2B59FFCE2C17758C00D9BE68 /* TextView.swift in Sources */,
 				2B59FFD22C1779EB00D9BE68 /* GradientView.swift in Sources */,
+				2B59FFDA2C18CC0D00D9BE68 /* ColorPickerView.swift in Sources */,
+				2B59FFD82C18C83000D9BE68 /* AlertView.swift in Sources */,
 				2B59FF9C2C176A8500D9BE68 /* ContentView.swift in Sources */,
 				2B59FF9A2C176A8500D9BE68 /* SwiftUISampleApp.swift in Sources */,
+				2B59FFDC2C18CE0800D9BE68 /* DatePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
