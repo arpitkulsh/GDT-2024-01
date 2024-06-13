@@ -19,6 +19,7 @@
 		2B59FFD82C18C83000D9BE68 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FFD72C18C83000D9BE68 /* AlertView.swift */; };
 		2B59FFDA2C18CC0D00D9BE68 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FFD92C18CC0D00D9BE68 /* ColorPickerView.swift */; };
 		2B59FFDC2C18CE0800D9BE68 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B59FFDB2C18CE0800D9BE68 /* DatePicker.swift */; };
+		2B64F7732C1A157900FD87A3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B64F7722C1A157900FD87A3 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		2B59FFD72C18C83000D9BE68 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		2B59FFD92C18CC0D00D9BE68 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		2B59FFDB2C18CE0800D9BE68 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		2B64F7722C1A157900FD87A3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				2B59FFD72C18C83000D9BE68 /* AlertView.swift */,
 				2B59FFD92C18CC0D00D9BE68 /* ColorPickerView.swift */,
 				2B59FFDB2C18CE0800D9BE68 /* DatePicker.swift */,
+				2B64F7722C1A157900FD87A3 /* ListView.swift */,
 				2B59FF9D2C176A8700D9BE68 /* Assets.xcassets */,
 				2B59FF9F2C176A8700D9BE68 /* Preview Content */,
 			);
@@ -171,6 +174,7 @@
 				2B59FFDA2C18CC0D00D9BE68 /* ColorPickerView.swift in Sources */,
 				2B59FFD82C18C83000D9BE68 /* AlertView.swift in Sources */,
 				2B59FF9C2C176A8500D9BE68 /* ContentView.swift in Sources */,
+				2B64F7732C1A157900FD87A3 /* ListView.swift in Sources */,
 				2B59FF9A2C176A8500D9BE68 /* SwiftUISampleApp.swift in Sources */,
 				2B59FFDC2C18CE0800D9BE68 /* DatePicker.swift in Sources */,
 			);
