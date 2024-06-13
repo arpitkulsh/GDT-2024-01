@@ -21,6 +21,8 @@ struct IconView: View {
             Image(systemName: "person.2.fill")
                 .renderingMode(.original)
                 .font(.largeTitle)
+            
+            
         }
         
     }
