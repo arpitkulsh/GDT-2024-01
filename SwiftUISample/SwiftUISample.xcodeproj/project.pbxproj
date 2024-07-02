@@ -25,6 +25,9 @@
 		2B64F77B2C1B6DC400FD87A3 /* BindingPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B64F77A2C1B6DC400FD87A3 /* BindingPractice.swift */; };
 		2B64F77D2C1B70E800FD87A3 /* NavigationViewPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B64F77C2C1B70E800FD87A3 /* NavigationViewPractice.swift */; };
 		2B64F77F2C1B71F500FD87A3 /* MyOtherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B64F77E2C1B71F500FD87A3 /* MyOtherView.swift */; };
+		2BB6ECDE2C2F379F000E6E85 /* CombineUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6ECDD2C2F379F000E6E85 /* CombineUseCase.swift */; };
+		2BB6ECE02C331CC2000E6E85 /* SampleCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6ECDF2C331CC2000E6E85 /* SampleCombine.swift */; };
+		2BB6ECE22C3322A2000E6E85 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6ECE12C3322A2000E6E85 /* UserViewModel.swift */; };
 		2BBA16AB2C1CBC3200673D0F /* MenuPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA16AA2C1CBC3200673D0F /* MenuPractice.swift */; };
 		2BBA16AD2C1CBCC400673D0F /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA16AC2C1CBCC400673D0F /* ImageDownload.swift */; };
 		2BBA16AF2C1CBFE700673D0F /* SignupUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBA16AE2C1CBFE700673D0F /* SignupUI.swift */; };
@@ -52,6 +55,9 @@
 		2B64F77A2C1B6DC400FD87A3 /* BindingPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingPractice.swift; sourceTree = "<group>"; };
 		2B64F77C2C1B70E800FD87A3 /* NavigationViewPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewPractice.swift; sourceTree = "<group>"; };
 		2B64F77E2C1B71F500FD87A3 /* MyOtherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOtherView.swift; sourceTree = "<group>"; };
+		2BB6ECDD2C2F379F000E6E85 /* CombineUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineUseCase.swift; sourceTree = "<group>"; };
+		2BB6ECDF2C331CC2000E6E85 /* SampleCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCombine.swift; sourceTree = "<group>"; };
+		2BB6ECE12C3322A2000E6E85 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		2BBA16AA2C1CBC3200673D0F /* MenuPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPractice.swift; sourceTree = "<group>"; };
 		2BBA16AC2C1CBCC400673D0F /* ImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
 		2BBA16AE2C1CBFE700673D0F /* SignupUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUI.swift; sourceTree = "<group>"; };
@@ -108,9 +114,12 @@
 				2BBA16AA2C1CBC3200673D0F /* MenuPractice.swift */,
 				2BBA16AC2C1CBCC400673D0F /* ImageDownload.swift */,
 				2BBA16AE2C1CBFE700673D0F /* SignupUI.swift */,
+				2BB6ECDF2C331CC2000E6E85 /* SampleCombine.swift */,
 				2BBA16B02C1CC3B800673D0F /* SignupUIComponents.swift */,
 				2B59FF9D2C176A8700D9BE68 /* Assets.xcassets */,
 				2B59FF9F2C176A8700D9BE68 /* Preview Content */,
+				2BB6ECDD2C2F379F000E6E85 /* CombineUseCase.swift */,
+				2BB6ECE12C3322A2000E6E85 /* UserViewModel.swift */,
 			);
 			path = SwiftUISample;
 			sourceTree = "<group>";
@@ -194,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B59FFD02C17770700D9BE68 /* ColorView.swift in Sources */,
+				2BB6ECDE2C2F379F000E6E85 /* CombineUseCase.swift in Sources */,
 				2B59FFD62C18C37400D9BE68 /* BackgroundOverlay.swift in Sources */,
 				2B59FFD42C177C0400D9BE68 /* IconView.swift in Sources */,
 				2BBA16AD2C1CBCC400673D0F /* ImageDownload.swift in Sources */,
@@ -202,9 +212,11 @@
 				2B59FFD22C1779EB00D9BE68 /* GradientView.swift in Sources */,
 				2B64F7772C1B66D700FD87A3 /* ScrollViewUI.swift in Sources */,
 				2B59FFDA2C18CC0D00D9BE68 /* ColorPickerView.swift in Sources */,
+				2BB6ECE22C3322A2000E6E85 /* UserViewModel.swift in Sources */,
 				2B59FFD82C18C83000D9BE68 /* AlertView.swift in Sources */,
 				2B59FF9C2C176A8500D9BE68 /* ContentView.swift in Sources */,
 				2B64F7732C1A157900FD87A3 /* ListView.swift in Sources */,
+				2BB6ECE02C331CC2000E6E85 /* SampleCombine.swift in Sources */,
 				2BBA16AB2C1CBC3200673D0F /* MenuPractice.swift in Sources */,
 				2BBA16AF2C1CBFE700673D0F /* SignupUI.swift in Sources */,
 				2B59FF9A2C176A8500D9BE68 /* SwiftUISampleApp.swift in Sources */,
